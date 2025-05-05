@@ -1,0 +1,31 @@
+/* le corps du document doit être écrit en helvetica.
+le titre de niveau 1 doit être centré et écrit en rouge.
+tous les titres de niveau 2 doivent être soulignés.
+les titres de niveau 2 dans les sections doivent être écrits en vert.
+les titres de niveau 2 dans les articles doivent être écrits en bleu.
+les paragraphes suivant directement un titre de niveau 2 doivent être écrits en rouge italique.
+les paragraphes suivant un titre de niveau 1 doivent être écrits en violet. */
+
+body {
+  font-family: Helvetica;
+}
+h1 {
+  text-align: center;
+  color: red;
+}
+h2 {
+  text-decoration: underline;
+}
+article section h2 {
+  color: green;
+}
+article h2 {
+  color: blue;
+}
+h2 + p {
+  color: red;
+  font-style: italic;
+}
+h1 + p {
+  color: violet;
+}

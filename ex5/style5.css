@@ -1,0 +1,42 @@
+/* Mettre les textes du formulaire en police Helvetica, la largeur globale du formulaire à 400px. 
+Centrer le formulaire dans la page et l'écarter du bord supérieur de la page de 100px.
+Pour les input : une bordure noire continue de 1 pixel, des bords arrondis, une largeur fixée à 200px et faire en sorte que les champs soient espacés les uns des autres. 
+Ajouter un padding de 5px enhaut et en bas, et 10px à gauche et à droite.
+Des labels de 100px de large à gauche des champs de saisie du fieldset.
+Le bouton d'envoi doit avoir une couleur de fond modifiée, 
+faire 400px de large et le texte doit être en gras et au centre du bouton.
+L'input ayant le focus doit avoir un bord de 2px bleu. */
+body {
+  font-family: Helvetica, sans-serif;
+  height: 100vh;
+}
+form {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px 5px;
+}
+label {
+  width: 100px;
+  margin-bottom: 5px;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  width: 400px;
+  font-weight: bold;
+}
+input:focus {
+  border: 2px solid blue;
+}

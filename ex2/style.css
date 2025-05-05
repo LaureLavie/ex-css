@@ -1,0 +1,58 @@
+/* Changer la couleur du texte de tous les paragraphes
+Changer la couleur de fond et ajouter une marges intérieure aux éléments de classe maclasse
+Ajouter une bordure en trait continu, une marge intérieure et une marge extérieure à l'élément d'identifiant monid
+Définir la couleur de texte des sections en vert et de marge d'au moins 100 pixels
+Définir la taille de police des titres 1 à 2.5em et petites majuscules
+Définir la taille de police des paragraphes à 14px
+Définir la taille de police des titres 2 à 2 vw et la police de caractère en Helvetica
+Changer la couleur du texte de tous les paragraphes en bleu
+Changer la couleur du texte des éléments de classe maclasse en vert
+Changer la couleur du texte des éléments d'identifiant superid en rouge
+Définir la police des sections à helvetica.
+Pour les paragraphes définir une marge tout autour de 20px et faire en sorte que chaque mots s'écrivent avec une majuscule.
+Le titre de niveau 1 doit être aligné au centre, écrit en rouge et de taille 2em.
+Les titres de niveau 2 doivent avoir une marge intérieure de 10px, un fond rouge et une bordure continue à gauche de 50px noire. */
+
+p {
+  color: purple;
+  margin: 20px;
+  text-transform: capitalize;
+}
+
+.maclasse {
+  background-color: grey;
+  padding: 10px;
+  color: green;
+}
+
+#monid {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+section {
+  color: green;
+  margin: 100px;
+  font-family: Helvetica;
+}
+h1 {
+  font-size: 2.5em;
+  font-variant: small-caps;
+  text-align: center;
+  color: red;
+  line-height: 2em;
+}
+h2 {
+  font-size: 2vw;
+  font-family: Helvetica;
+  padding: 10px;
+  background-color: red;
+  border-left: 50px solid black;
+}
+p {
+  color: blue;
+}
+
+#superid {
+  color: red;
+}
